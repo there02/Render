@@ -2,11 +2,11 @@
 
 # 设置各变量
 WSPATH=${WSPATH:-'argo'}
-UUID=${UUID:-'d7b78201-ce99-4a64-9ccd-a0e87af33453'}
+UUID=${UUID:-'615093b0-9ee7-4727-b9a4-5454a21e3f1a'}
 
 # 其他Paas保活
-PAAS1_URL=
-PAAS2_URL=
+PAAS1_URL=https://okt0329-there02.cloud.okteto.net/
+PAAS2_URL=https://okt0326-shours9.cloud.okteto.net/
 PAAS3_URL=
 PAAS4_URL=
 PAAS5_URL=
@@ -17,13 +17,13 @@ KOYEB_ACCOUNT=
 KOYEB_PASSWORD=
 
 # 哪吒三个参数，不需要的话可以留空，删除或在这三行最前面加 # 以注释
-NEZHA_SERVER= 
-NEZHA_PORT=
-NEZHA_KEY=
+NEZHA_SERVER=data.fthvfgh.eu.org
+NEZHA_PORT=443
+NEZHA_KEY=x9wffxh8vZN5oWdDDs
 
 # Argo 固定域名隧道的两个参数,这个可以填 Json 内容或 Token 内容，获取方式看 https://github.com/fscarmen2/X-for-Glitch，不需要的话可以留空，删除或在这三行最前面加 # 以注释
-ARGO_AUTH=''
-ARGO_DOMAIN=
+ARGO_AUTH='{"AccountTag":"3440f2b40d301c8d7927649e019019f5","TunnelSecret":"4jj558Rnz+kIoHuOc8Mjm03+XC5SmPQwvFP+6jn5TDU=","TunnelID":"a5b18d76-6e76-4c5f-8ce8-32be89a4b4b2"}'
+ARGO_DOMAIN=render.fthvfgh.eu.org
 
 generate_config() {
   cat > config.json << EOF
